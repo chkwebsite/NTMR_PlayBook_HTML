@@ -138,9 +138,25 @@ body, .body{
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
-
+/* .nav-link:nth-last-child(1) ::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background-color: transparent;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+} */
 .nav-link:hover::after {
     width: 80%;
+}
+.nav-link:nth-last-child(1):hover::after {
+    width: 80%;
+}
+.nav-item:nth-last-child(1) .nav-link:hover::after{
+ width: 0%;
 }
 .p-lr {
     padding-left: 30px;
@@ -223,7 +239,16 @@ button.btn.btn-warning {
 .line-height-15 {
     line-height: 1.5;
 }
+.new_text-center{
+  text-align: center;
+}
 @media (max-width: 768px) {
+  .new_text-center{
+  text-align: left;
+}
+  .nav-link:nth-last-child(1):hover::after {
+    width: 100%;
+}
   .lines{
     display: none;
   }
@@ -287,7 +312,7 @@ position: absolute;
 .card_sty{
   transition: 0.3s;
       height: 100%;
-      cursor: pointer;
+      cursor: auto;
 }
 .card_sty:hover{
   transition: 0.3s;
