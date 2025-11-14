@@ -173,7 +173,7 @@ padding: 0px 15px;
 }
 /* BANNER CSS  */
 .bann_img_sty {
-    height: 550px;
+    height: auto;
     object-fit: fill;
 }
 .banner_content {
