@@ -240,7 +240,15 @@ button.btn.btn-warning {
     flex-direction: column;
 }
 }
-
+@media (max-width:576px){
+  .m-upd{
+    justify-content: flex-start;
+        align-items: baseline;
+  }
+  .btn_w-100{
+    width: 90%;
+  }
+}
 /* START YOUR ASS  */
 .p-color{
   color: #64748B;
