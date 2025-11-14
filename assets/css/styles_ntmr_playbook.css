@@ -68,7 +68,7 @@ body, .body{
     display: inline-block;
     position: relative;
     bottom: -5px;
-    left: -5px;
+    left: 0px;
     transition: 0.4s ease;
     margin-top: 5px;
     text-align: left;
@@ -170,6 +170,20 @@ padding: 0px 15px;
   .ntmr_container{
     width: 100%;
   }
+  .nav-link.active::after {
+    width: 100%;
+}
+.navbar-nav .dropdown-menu {
+    position: static;
+    background-color: rgba(0,0,0,0.1);
+    border: 0px solid;
+}
+.dropdown-item{
+  color: #ffffff;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
 }
 /* BANNER CSS  */
 .bann_img_sty {
@@ -210,6 +224,7 @@ button.btn.btn-warning {
     line-height: 1.5;
 }
 @media (max-width: 768px) {
+  .m-font-size{font-size: 16px;}
   .btn{
     border-radius: 25px;
   }
