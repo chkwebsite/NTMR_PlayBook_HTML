@@ -37,7 +37,43 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #204667;
 }
-
+/* BACK TO TOP CSS  */
+#button {
+    display: inline-block;
+    background-color: #f97316;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
 html, .html{
     font-family: AlbertSans-Regular, AlbertSans-Light;
 }
@@ -49,7 +85,6 @@ body, .body{
 .abs-medium{font-family: AlbertSans-Medium}
 .abs-light{font-family: AlbertSans-Light}
 .abs-bold{font-family: AlbertSans-Bold}
-
 
 /* MENU CSS  */
 .dropdown-toggle::after {
@@ -138,17 +173,6 @@ body, .body{
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
-/* .nav-link:nth-last-child(1) ::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 50%;
-    bottom: 0;
-    background-color: transparent;
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
-} */
 .nav-link:hover::after {
     width: 80%;
 }
@@ -217,7 +241,7 @@ padding: 0px 15px;
     align-items: center;
     flex-direction: column;
 }
-button.btn.btn-warning {
+.btn-warning {
     background-color: #F97316;
     border-color: #F97316;
     color: #fff;
@@ -229,6 +253,11 @@ button.btn.btn-warning {
     gap: 15px;
     align-items: center;
     width: 100%;
+}
+a.link {
+    text-decoration: none;
+    color: #0F172A;
+    font-family: AlbertSans-Medium;
 }
 .lines{
     font-size: 32px;
@@ -424,8 +453,6 @@ position: absolute;
         flex-direction: column;
   }
 }
-
-
 /* BUTTONN ANIMATIONS  */
 .custom-btn {
     padding: 10px 25px;
@@ -470,3 +497,125 @@ background-image: linear-gradient(315deg, #3535351e 0%, #3535351e 74%);
 .btn-13:active {
   top: 2px;
 }
+
+
+/* INNER PAGES CSS START  */
+
+/* .inst_rating {
+    list-style: none;
+    padding: 20px 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    line-height: 1;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+    border-bottom: 2px solid #ddd;
+}
+.inst_rating li{
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+.inst_rating li a{
+    padding: 10px 12px;
+    margin: 0px;
+    text-decoration: none;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    text-align: center;
+}
+.inst_rating li a:hover{
+    background-color: wheat;
+    color: #334155;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+.inst_rating li a.active{
+    background-color: #F97316;
+    color: #ffffff;
+    border-radius: 6px;
+} */
+
+.inst_rating {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    display: flex;    
+    line-height: 1;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.inst_rating li {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+.inst_rating li a {
+    padding: 10px 12px;
+    margin: 0;
+    text-decoration: none;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.inst_rating li a:hover {
+    background-color: wheat;
+    color: #334155;
+}
+
+.inst_rating li a.active {
+    background-color: #F97316;
+    color: #fff;
+}
+.tabs_name{
+  display: none;
+}
+/* ------------------------------
+   🔥 Responsive Design
+--------------------------------*/
+@media (min-width:769px) and (max-width:1090px){
+  .inst_rating {
+    flex-wrap: wrap;
+  }
+}
+/* Tablets */
+@media (max-width: 768px) {
+  .pg_height{
+    height: 300px;
+  }
+  .tabs_name{
+  display: block;
+}
+    .inst_rating {
+        padding: 15px 0;
+        gap: 8px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .inst_rating li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */

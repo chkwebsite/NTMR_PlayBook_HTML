@@ -16,15 +16,12 @@
     <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/all.min.js"></script>
     <script type="text/javascript" src="assets/js/aos.js"></script>
-    <script type="text/javascript">
-        AOS.init({
-            duration: 1000
-        });
-    </script>
+
     <title>NTMR Playbook HOME</title>
 </head>
 
 <body>
+    <a id="button"></a>
     <div class="container-fluid">
         <div class="row" style="background-color: #204667;">
             <div class="col-sm-12 p-0">
@@ -46,29 +43,51 @@
                                     <div class="collapse navbar-collapse" id="mynavbar">
                                         <ul class="navbar-nav me-auto">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="javascript:void(0)">Home</a>
+                                                <a class="nav-link active" href="index.html">Home</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="javascript:void(0)">Diagnostic Test</a>
+                                                <a class="nav-link" href="DiagnosticTest.html">Diagnostic Test</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="javascript:void(0)">Reform Framework</a>
+                                                <a class="nav-link" href="ReformFramework.html">Reform Framework</a>
                                             </li>
                                             <li class="nav-item dropdown">
                                                 <a class="nav-link dropdown-toggle" href="#" role="button"
                                                     data-bs-toggle="dropdown">Reform Elements
                                                     <span class="arrow"></span> </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Link</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another link</a></li>
-                                                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href=" CentralisedAdmissions.html">Centralised
+                                                            Admissions</a></li>
+                                                    <li><a class="dropdown-item" href="Awareness.html">Awareness</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="Examination.html">Examination</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="Registrationrenewal.html">Registration and Renewal</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                            href="GrievanceRedressal.html">Grievance Redressal</a></li>
+                                                    <li><a class="dropdown-item" href="InstituteRatings.html">Institute
+                                                            Ratings</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="InstituteMentoring.html">Institute Mentoring</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="Competencycertification.html">Competency
+                                                            Certification</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="ContinuedNursingeducation.html">Continued Nursing
+                                                            Education</a></li>
+                                                    <li><a class="dropdown-item"
+                                                            href="IntegratedDigitalPlatform.html">Integrated Digital
+                                                            Platform</a></li>
                                                 </ul>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="javascript:void(0)">Partners</a>
+                                                <a class="nav-link" href="Partners.html">Partners</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="javascript:void(0)">
+                                                <a class="nav-link" href="DownloadPlaybook.html">
                                                     <span class="plbook-dwn"> Download Playbook</span></a>
                                             </li>
                                         </ul>
@@ -91,9 +110,9 @@
                             <h1 class="abs-medium text-white text-center">Nursing Talent Market Reform</h1>
                         </div>
                         <div class="banner_btn mt-4">
-                            <button type="button" class="btn btn-warning p-lr btn_w-100">Start Your
-                                Assessment</button>
-                            <button type="button" class="btn btn-light p-lr btn_w-100">Explore Reform Steps</button>
+                            <a href="AssessmentDisclaimer.html" class="btn btn-warning p-lr btn_w-100">Start Your
+                                Assessment</a>
+                            <a href="#" class="btn btn-light p-lr btn_w-100">Explore Reform Steps</a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +151,8 @@
                                 </span>
                             </div>
                             <center>
-                                <button type="button" class="btn btn-warning px-4 btn_w-100">Take Assessment</button>
+                                <a href="AssessmentDisclaimer.html" class="btn btn-warning px-4 btn_w-100">Take
+                                    Assessment</a>
                             </center>
                         </div>
                     </div>
@@ -414,13 +434,14 @@
                                     <p class="bb">Resource & Links</p>
                                     <ul class="footer_ul">
                                         <li>
-                                            <a href="#">Indian Nursing Council resources</a>
+                                            <a href="ndianNursingCouncilresources.html">Indian Nursing Council
+                                                resources</a>
                                         </li>
                                         <li>
-                                            <a href="#">Download the Playbook</a>
+                                            <a href="DownloadPlaybook.html">Download the Playbook</a>
                                         </li>
                                         <li>
-                                            <a href="#">Terms of Use / Legal Info</a>
+                                            <a href="LegalInfo.html">Terms of Use / Legal Info</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -432,5 +453,24 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    AOS.init({
+        duration: 1000
+    });
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+</script>
 
 </html>
