@@ -271,6 +271,20 @@ a.link {
 .new_text-center{
   text-align: center;
 }
+.d_flx{
+  display: flex;
+  justify-content: space-start;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lines{
+  width: 35px;
+    border-bottom: 2px solid #dfdfdf;
+}
+.bg-info-subtle {
+    background-color: #E0F2FE !important;
+}
 @media (max-width: 768px) {
   .new_text-center{
   text-align: left;
