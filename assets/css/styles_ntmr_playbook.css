@@ -117,7 +117,7 @@ body, .body{
     position: absolute;
     content: "";
     display: inline-block;
-    width: 12px;
+    width: 9px;
     height: 2px;
     background-color: #fff;
     transition: 0.4s ease;
@@ -125,8 +125,8 @@ body, .body{
 .dropdown-toggle .arrow:after {
     position: absolute;
     transform: rotate(90deg);
-    top: -5px;
-    left: 5px;
+    top: -3px;
+    left: 3px;
 }
 .dropdown-toggle.show .arrow:before {
     transform: translate(10px, 0);
@@ -136,7 +136,7 @@ body, .body{
 }
 .nav-link{
   color: #ffffff;
-  font-family: AlbertSans-Light
+  font-family: AlbertSans-Medium
 }
 .plbook-dwn{
     background-color: #fff;
@@ -185,6 +185,12 @@ body, .body{
 .p-lr {
     padding-left: 30px;
     padding-right: 30px;
+}
+.arrow_down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
 }
 @media (min-width: 576px) {
 
@@ -392,12 +398,19 @@ position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.res_mob {
+    border-bottom: 1px solid #818181;
+    padding-bottom: 30px;
+}
 @media (max-width: 992px){
  .pnt_ul li::after{
     right: 10px;
 }
 }
 @media (max-width: 768px){
+  .c_height{
+    height: 300px;
+  }
   .pnt_ul li{
     height: 45px;
     margin: 5px 0px;
