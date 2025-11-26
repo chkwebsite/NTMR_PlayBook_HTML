@@ -341,7 +341,22 @@ position: absolute;
     bottom: -13px;
     border-top: 2px dashed #ddd;
 }
-
+.plus_icon{
+      background-image: url(../images/plus-104.png) !important;
+    width: 30px;
+    height: 30px;
+    background-color: #f9f9f9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: 15px;
+    border: 1px solid #eee;
+    padding: 5px;
+    background-repeat: no-repeat;
+    border: 1px solid #eee;
+}
 .dash-left::before{
     position: absolute;
     content: "";
@@ -646,3 +661,12 @@ background-image: linear-gradient(315deg, #3535351e 0%, #3535351e 74%);
 }
 
 /* Mobile */
+
+
+.inn_ul{
+  list-style-image: url(../images/hand_icon.png);
+}
+.pos_r-13{
+  position: relative;
+    top: -13px;
+}

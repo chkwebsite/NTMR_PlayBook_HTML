@@ -18,6 +18,50 @@
     <script type="text/javascript" src="assets/js/aos.js"></script>
 
     <title>NTMR Playbook HOME</title>
+    <style>
+        button.nav-link {
+            color: #333;
+            font-family: AlbertSans-Medium;
+            border-bottom: 0px solid #dee2e6 !important;
+            margin-bottom: 10px !important;
+        }
+
+        button.nav-link::after {
+            height: 0px !important;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #2563EB;
+            background-color: #EFF6FF;
+            border-bottom: 1px solid #dee2e6 !important;
+        }
+
+        .accordion-button::after {
+            background-image: url(./assets/images/plus-104.png) !important;
+            width: 30px;
+            height: 30px;
+            background-color: #f9f9f9;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: 45%;
+            border: 1px solid #eee;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            transform: rotate(-135deg) !important;
+        }
+
+        @media (max-width: 991px) {
+            .tab-content>.tab-pane {
+                display: block;
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -149,18 +193,251 @@
                         </div>
                     </div>
                 </nav>
-                <!-- <ul class="inst_rating">
-                    <li><a class="" href=" CentralisedAdmissions.html">Centralised Admissions</a></li>
-                    <li><a class="" href="Awareness.html">Awareness</a></li>
-                    <li><a class="" href="Examination.html">Examination</a></li>
-                    <li><a class="" href="Registrationrenewal.html">Registration and Renewal</a></li>
-                    <li><a class="" href="GrievanceRedressal.html">Grievance Redressal</a></li>
-                    <li><a class="active" href="InstituteRatings.html">Institute Ratings</a></li>
-                    <li><a class="" href="InstituteMentoring.html">Institute Mentoring</a></li>
-                    <li><a class="" href="Competencycertification.html">Competency Certification</a></li>
-                    <li><a class="" href="ContinuedNursingeducation.html">Continued Nursing Education</a></li>
-                    <li><a class="" href="IntegratedDigitalPlatform.html">Integrated Digital Platform</a></li>
-                </ul> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12" style="background-color: #F8FAFC;">
+                <ul class="nav nav-tabs nav-pills d-none d-lg-flex flex-column" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100 text-start active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">
+                            <i class="fa-solid fa-bars-staggered"></i> Background</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100 text-start" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">
+                            <i class="fa-solid fa-bars-staggered"></i> Objective</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100 text-start" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">
+                            <i class="fa-solid fa-bars-staggered"></i> Guiding principles</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link w-100 text-start" id="Reformdesign-tab" data-bs-toggle="tab"
+                            data-bs-target="#Reformdesign-tab-pane" type="button" role="tab"
+                            aria-controls="Reformdesign-tab-pane" aria-selected="false">
+                            <i class="fa-solid fa-bars-staggered"></i> Reform design</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12" style="background-color: #F8FAFC;">
+                <div class="tab-content accordion" id="myTabContent">
+                    <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel"
+                        aria-labelledby="home-tab" tabindex="0">
+
+                        <h2 class="accordion-header d-lg-none" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="bi bi-arrow-right pe-2"></i> Background</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block"
+                            aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about
+                                any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel"
+                        aria-labelledby="profile-tab" tabindex="0">
+                        <h2 class="accordion-header d-lg-none" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-arrow-right pe-2"></i> Objective
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse d-lg-block"
+                            aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about
+                                any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade accordion-item" id="contact-tab-pane" role="tabpanel"
+                        aria-labelledby="contact-tab" tabindex="0">
+                        <h2 class="accordion-header d-lg-none" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="bi bi-arrow-right pe-2"></i> Guiding principles
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse d-lg-block"
+                            aria-labelledby="headingThree" data-bs-parent="#myTabContent">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse
+                                plugin adds the appropriate classes that we use to style each element. These classes
+                                control the overall
+                                appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                                this with
+                                custom CSS or overriding our default variables. It's also worth noting that just about
+                                any HTML can go
+                                within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade accordion-item" id="Reformdesign-tab-pane" role="tabpanel"
+                        aria-labelledby="Reformdesign-tab" tabindex="0">
+                        <h2 class="accordion-header d-lg-none" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="bi bi-arrow-right pe-2"></i> Reform design
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse d-lg-block"
+                            aria-labelledby="headingFour" data-bs-parent="#myTabContent">
+                            <div class="accordion-body">
+                                <small class="p-color">There are 11 components to design a rating reform: </small>
+                                <ul style="border-left: 2px dashed #ddd;list-style: none;">
+                                    <li>
+                                        <div class="position-relative">
+                                            <div class=" position-absolute" style="left: -35px;">
+                                                <i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg"
+                                                    style="margin-left: -4px;"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                                <p class="fw-bold"> Component 1: Release the
+                                                    state ratings policy</p>
+                                                <p>X</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <small class="p-color">A formal government notification to be issued
+                                                covering details of the policy. Once issued, it should also be published
+                                                on the official portal and shared with all recognised
+                                                institutes. </small>
+                                        </div>
+                                        <div class="card mb-3" style="border-color: #E2E8F0;">
+                                            <div class="card-body">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
+                                                    <span>
+                                                        <img src="./assets/images/icons.png"> Highlights from the draft
+                                                        ratings policy </span>
+                                                    <div class="plus_icon"></div>
+                                                </div>
+                                                <ul class="inn_ul">
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0"><b>Scope and coverage:</b> Applies to
+                                                            all
+                                                            recognised nursing
+                                                            and allied health institutes with at least two admitted
+                                                            batches,
+                                                            ensuring universal comparability and preventing selective
+                                                            participation. Ratings are course-specific, with an option
+                                                            for
+                                                            an aggregate institute score</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0"><b>Validity and reassessment:</b>
+                                                            Ratings remain valid for three years, after which
+                                                            reassessment is mandatory to maintain recognition and ensure
+                                                            sustained quality</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0"><b>Parameters:</b>
+                                                            Evaluates infrastructure, teaching–learning processes,
+                                                            clinical and community practice, learning outcomes,
+                                                            and faculty or student competency, aligned with NNMC norms
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0"><b>Stages:</b>
+                                                            Includes self-assessment, desktop verification, independent
+                                                            on-ground validation, and regulatory approval to
+                                                            balance self-reporting with independent checks
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0"><b>Independent verification –</b>
+                                                            On-ground inspections by trained, empanelled assessors to
+                                                            validate compliance
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" style="border-color: #E2E8F0;">
+                                            <div class="card-body">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
+                                                    <span>
+                                                        <img src="./assets/images/files.png"> Suggested Samples and
+                                                        Templates</span>
+                                                    <div class="plus_icon"></div>
+                                                </div>
+                                                <ul class="inn_ul">
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0">
+                                                            Sample rating policy:
+                                                            <a href="#" target="_blank"> [Download here ]</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3" style="border-color: #E2E8F0;">
+                                            <div class="card-body">
+                                                <div
+                                                    class="d-flex justify-content-start align-items-center gap-2 flex-wrap">
+                                                    <span>
+                                                        <img src="./assets/images/star.png"> Reference documents</span>
+                                                    <div class="plus_icon"></div>
+                                                </div>
+                                                <ul class="inn_ul">
+                                                    <li>
+                                                        <p class="pos_r-13 mb-0">
+                                                            Policy used in Bihar:
+                                                            <a href="#" target="_blank"> [Download here ]</a>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="position-relative">
+                                            <div class=" position-absolute" style="left: -35px;">
+                                                <i class="bi bi-dash-lg"></i><i class="bi bi-dash-lg"
+                                                    style="margin-left: -4px;"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center gap-2">
+                                                <p class="fw-bold"> Component 2: Finalise ratings parameters and
+                                                    assessment tools</p>
+                                                <p>X</p>
+                                            </div>
+                                        </div>
+                                        <div class="">aaaaaaaaaaaaaa</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
         </div>
     </div>
