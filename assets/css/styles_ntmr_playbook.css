@@ -738,3 +738,8 @@ ul.sideTab li .accordion-button.collapsed{
 .top_4{
   top: 4px;
 }
+
+#accordion_inn_thired button.collapsed, #accordion_inn_components_2 button.collapsed, #accordion_inn_components_3 button.collapsed, #accordion_inn_components_4 button.collapsed, #accordion_inn_components_5 button.collapsed, #accordion_inn_components_6 button.collapsed, #accordion_inn_components_7 button.collapsed, #accordion_inn_components_8 button.collapsed, #accordion_inn_components_9 button.collapsed, #accordion_inn_components_10 button.collapsed, #accordion_inn_components_11 button.collapsed
+ {
+    background-color: #f1f5f9;
+}
