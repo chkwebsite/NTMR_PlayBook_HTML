@@ -718,3 +718,23 @@ ul.sideTab li .accordion-button.collapsed{
 .accordion-button {
     padding: 10px 15px;
 }
+#accordionExample .accordion-button{
+      background-color: #F1F5F9;
+    border: 0px solid !important;
+    margin-bottom: 15px;
+}
+.accordion-item {
+    color: var(--bs-accordion-color);
+    border: 0px solid;
+    border-radius: 6px;
+}
+#accordion_inn button.accordion-button {
+    background-color: transparent;
+    padding-top: 0px;
+    padding-bottom: 0;
+    padding-left: 0px;
+    box-shadow: none;
+}
+.top_4{
+  top: 4px;
+}
