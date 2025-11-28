@@ -15,6 +15,11 @@
   font-family: AlbertSans-Bold;
   src: url(../fonts/AlbertSans-Bold.ttf);
 }
+
+@font-face {
+  font-family: AlbertSans-SemiBold;
+  src: url(../fonts/AlbertSans-SemiBold.ttf);
+}
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 5px;
@@ -85,6 +90,7 @@ body, .body{
 .abs-medium{font-family: AlbertSans-Medium}
 .abs-light{font-family: AlbertSans-Light}
 .abs-bold{font-family: AlbertSans-Bold}
+.abs-SemiBold{font-family: AlbertSans-SemiBold;}
 
 /* MENU CSS  */
 .dropdown-toggle::after {
@@ -458,15 +464,17 @@ position: absolute;
 .bb{
   position: relative;
   color: #ffffff;
+  margin-bottom: 25px;
 }
 .bb::after{
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 2px;
-  background-color: #ffffff;
-  bottom: 0px;
-  left: 0px;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 0px;
+    border-radius: 25px;
 }
 .footer_ul{
   list-style: none;
@@ -640,6 +648,9 @@ background-image: linear-gradient(315deg, #3535351e 0%, #3535351e 74%);
 }
 /* Tablets */
 @media (max-width: 768px) {
+  .hide_768{
+    display: none;
+  }
   .pg_height{
     height: 300px;
   }
@@ -742,4 +753,26 @@ ul.sideTab li .accordion-button.collapsed{
 #accordion_inn_thired button.collapsed, #accordion_inn_components_2 button.collapsed, #accordion_inn_components_3 button.collapsed, #accordion_inn_components_4 button.collapsed, #accordion_inn_components_5 button.collapsed, #accordion_inn_components_6 button.collapsed, #accordion_inn_components_7 button.collapsed, #accordion_inn_components_8 button.collapsed, #accordion_inn_components_9 button.collapsed, #accordion_inn_components_10 button.collapsed, #accordion_inn_components_11 button.collapsed
  {
     background-color: #f1f5f9;
+}
+
+.btn.btn_continue {
+    background-color: #EFF6FF;
+    border: 1px solid #93C5FD;
+    color: #2563EB;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.btn.btn_continue:hover {
+    background-color: #dde7f5;
+    color: #2563EB;
+}
+
+@media (min-width:991px) and (max-width:1271px){
+  .ntmr_container {
+    width: 100%;
+}
+    .nav-link {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
 }
