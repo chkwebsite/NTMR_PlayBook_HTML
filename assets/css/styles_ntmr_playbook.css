@@ -776,3 +776,144 @@ ul.sideTab li .accordion-button.collapsed{
         padding-left: 12px !important;
     }
 }
+
+/* Nursing Diagnostic Tool Scorecard CSS */
+.ndts_pcolor{
+  color: #0f5296;
+}
+.page_title {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #0f5296;
+    color: #fff;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: AlbertSans-SemiBold;
+}
+.ndts_card .ndts_cardheder{
+  background-color: #0f5296;
+  color: #fff;  
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: AlbertSans-SemiBold;
+    border-color: #0f5296;
+}
+.big_size{
+  font-weight: bold;
+    color: #ff9f43;    
+    font-family: AlbertSans-SemiBold;
+    font-size: 50px;
+}
+.med_size {
+    font-size: 24px;
+    position: relative;
+    top: 8px;
+    font-family: AlbertSans-SemiBold;    
+    color: #ff9f43; 
+}
+.smbig_size{
+  font-weight: bold;
+    color: #ff9f43;    
+    font-family: AlbertSans-SemiBold;
+    font-size: 32px;
+}
+.smmed_size {
+    font-size: 22px;
+    position: relative;
+    top: 3px;
+    font-family: AlbertSans-SemiBold;    
+    color: #ff9f43; 
+}
+.smbig_size_low{
+  font-weight: bold;
+    color: #e74c3c;    
+    font-family: AlbertSans-SemiBold;
+    font-size: 32px;
+}
+.smmed_size_low {
+    font-size: 22px;
+    position: relative;
+    top: 3px;
+    font-family: AlbertSans-SemiBold;    
+    color: #e74c3c; 
+}
+.reform_score {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+.reform_score li {
+    padding-left: 15px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-family: AlbertSans-SemiBold; 
+    color: #0f5296; 
+    border-bottom: 1px solid #ccc;   
+}
+.dashed {
+    position: relative;
+}
+.dashed::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    border-left: 2px dashed #ddd;
+    right: 0;
+    top: 0;
+}
+.cont{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.score_average_org {
+    background: #ff9f43;
+    color: #333;
+    padding: 15px;
+    width: 70px;
+    text-align: center;
+}
+.score_weak {
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    width: 70px;
+    text-align: center;
+}
+.score_strong {
+    background: #27ae60;
+    color: white;
+    padding: 15px;
+    width: 70px;
+    text-align: center;
+}
+.high_sc{
+  width: 20px;
+  height: 20px;
+  background-color: #27ae60;
+  float: left;
+}
+.average_sc{
+  width: 20px;
+  height: 20px;
+  background-color: #ff9f43;
+  float: left;
+}
+.week_sc{
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  float: left;
+}
