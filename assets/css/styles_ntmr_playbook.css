@@ -117,7 +117,7 @@ body, .body{
     float: right;
 }
 .dropdown-toggle.show .arrow {
-    margin-top: -2px;
+    margin-top: -0px;
 }
 .dropdown-toggle .arrow:before, .arrow:after{
     position: absolute;
@@ -135,10 +135,10 @@ body, .body{
     left: 3px;
 }
 .dropdown-toggle.show .arrow:before {
-    transform: translate(10px, 0);
+    transform: translate(7px, 0);
 }
 .dropdown-toggle.show .arrow:after {
-    transform: rotate(90deg) translate(10px, 0);
+    transform: rotate(90deg) translate(7px, 0);
 }
 .nav-link{
   color: #ffffff;
@@ -916,4 +916,22 @@ ul.sideTab li .accordion-button.collapsed{
   height: 20px;
   background-color: #e74c3c;
   float: left;
+}
+
+.f_20{
+  font-size: 20px;
+}
+
+.list_unstyled li{
+  padding-bottom: 10px;
+}
+
+.inn_list_unstyled li{
+  padding-top: 8px;
+  padding-bottom: 0px;
+}
+.img_sty{
+      height: 27px;
+    position: relative;
+    top: -4px;
 }
