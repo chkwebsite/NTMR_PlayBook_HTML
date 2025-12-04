@@ -218,6 +218,13 @@ padding: 0px 15px;
         font-size: 13px;
     }
 }
+.plbook-dwn{
+    background-color: #fff;
+    border-radius: 12px;
+    color: #333;
+    padding: 10px 15px !important;
+    font-family: AlbertSans-Bold !important;
+}
 @media (max-width: 992px) {
   .ntmr_container{
     width: 100%;
