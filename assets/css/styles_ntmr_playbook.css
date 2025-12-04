@@ -103,7 +103,30 @@ body, .body{
     border-bottom: 0;
     border-left: .0em solid transparent;
 }
-.dropdown-toggle .arrow {
+.dropdown-toggle .arrow{
+background-image: url(../images/arr.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 15px;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: -7px;
+    transition: 0.6s;
+}
+.dropdown-toggle.show .arrow{
+    background-image: url(../images/arr.png);
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 15px;
+    float: right;
+    position: relative;
+    top: 2px;
+    right: -7px;
+    transform: rotate(180deg);    
+    transition: 0.6s;
+}
+/* .dropdown-toggle .arrow {
     width: 13px;
     height: 13px;
     display: inline-block;
@@ -139,7 +162,7 @@ body, .body{
 }
 .dropdown-toggle.show .arrow:after {
     transform: rotate(90deg) translate(7px, 0);
-}
+} */
 .nav-link{
   color: #ffffff;
   font-family: AlbertSans-Medium
