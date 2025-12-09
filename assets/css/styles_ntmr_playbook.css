@@ -126,6 +126,7 @@ background-image: url(../images/arr.png);
     transform: rotate(180deg);    
     transition: 0.6s;
 }
+
 /* .dropdown-toggle .arrow {
     width: 13px;
     height: 13px;
