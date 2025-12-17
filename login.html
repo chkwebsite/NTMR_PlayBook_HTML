@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <!-- CSS  -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/css/styles_ntmr_playbook.css" rel="stylesheet">
@@ -26,8 +27,8 @@
 
         <div class="row log_bg">
             <div class="ntmr_container">
-                <div class="col-xl-5 col-lg-5 co-md-6 col-sm-12">
-                    <div class="card shadow-sm" style="background-color: rgb(227 227 227 / 70%);">
+                <div class="col-xl-5 col-lg-5 co-md-6 col-sm-12 float-end">
+                    <div class="card shadow-sm" style="background-color: rgb(227 227 227 / 80%);">
                         <div class="card-body">
                             <center>
                                 <h3 class="abs-bold ">
@@ -45,12 +46,17 @@
                                     <input type="password" class="form-control" name="pwd" placeholder="Enter Password">
                                 </div>
                                 <div class="col-sm-11 m-auto mb-3">
-                                    <label for="remm" class="form-label text-primary">
-                                        <input type="checkbox" id="remm"> Remember
-                                        me</label>
+                                    <div class="d-flex justify-content-between gap-2 align-items-center flex-wrap">
+                                        <label for="remm" class="form-label text-primary">
+                                            <input type="checkbox" id="remm"> Remember
+                                            me</label>
+
+                                        <a href="#" class="btn btn-link text-primary">Forgot password ?</a>
+                                    </div>
+
                                 </div>
                                 <div class="col-sm-11 m-auto mb-3">
-                                    <button type="button" class="btn btn-info w-100 text-white shadow-sm">
+                                    <button type="button" class="btn btn-warning w-100 text-white shadow-sm">
                                         <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
                                 </div>
                             </div>
