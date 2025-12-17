@@ -966,3 +966,13 @@ ul.sideTab li .accordion-button.collapsed{
     position: relative;
     top: -4px;
 }
+
+.log_bg{
+  background: url(../images/home-banner_2.jpg);
+  height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
